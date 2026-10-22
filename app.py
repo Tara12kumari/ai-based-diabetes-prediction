@@ -91,10 +91,13 @@ st.info(
 )
 
 # ---------- LOAD MODEL ----------
-MODEL_PATH = "/content/diabetes_model.pkl"
+MODEL_PATH = os.path.join(
+    os.path.dirname(os.path.abspath(__file__)),
+    "diabetes_model_small.pkl"
+)
 
 if not os.path.exists(MODEL_PATH):
-    st.error("Model file not found at /content/diabetes_model_small.pkl")
+    st.error(f"Model file not found at {MODEL_PATH}")
     st.stop()
 
 @st.cache_resource
