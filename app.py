@@ -94,7 +94,7 @@ st.info(
 MODEL_PATH = "/content/diabetes_model.pkl"
 
 if not os.path.exists(MODEL_PATH):
-    st.error("Model file not found at /content/diabetes_model.pkl")
+    st.error("Model file not found at /content/diabetes_model_small.pkl")
     st.stop()
 
 @st.cache_resource
