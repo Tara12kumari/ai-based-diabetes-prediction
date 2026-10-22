@@ -81,13 +81,13 @@ st.markdown("""
 <div class="hero">
     <h1>🩺 Diabetes Prediction System</h1>
     <p>AI-powered health indicator classification using machine learning</p>
-    <p>Academic Minor Project · Random Forest Classifier</p>
+    <p> Minor Project · Random Forest Classifier</p>
 </div>
 """, unsafe_allow_html=True)
 
 st.info(
-    "Educational demonstration only. This model does not diagnose diabetes "
-    "and should not be used to make medical decisions."
+    "Educational demonstration to diagnose diabetes "
+    
 )
 
 # ---------- LOAD MODEL ----------
