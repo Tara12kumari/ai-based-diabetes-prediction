@@ -219,15 +219,15 @@ with st.form("health_form"):
                 )
             elif feature == "Age":
                 values[feature] = st.selectbox(
-                    "Age group (coded category)", list(range(1, 14))
+                    "Age group (coded category)", list(range(1, 100))
                 )
             elif feature == "Education":
                 values[feature] = st.selectbox(
-                    "Education level (coded category)", list(range(1, 7))
+                    "Education level (coded category)", list(range(1, 10))
                 )
             elif feature == "Income":
                 values[feature] = st.selectbox(
-                    "Income level (coded category)", list(range(1, 9))
+                    "Income level (coded category)", list(range(1, 10))
                 )
 
     st.markdown("")
