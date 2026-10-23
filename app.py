@@ -118,7 +118,7 @@ yes_no_labels = {
     "HighBP": "High blood pressure",
     "HighChol": "High cholesterol",
     "CholCheck": "Cholesterol check in the past 5 years",
-    "Smoker": "Smoked at least 100 cigarettes in lifetime",
+    "Smoker": "Smoked in lifetime",
     "Stroke": "History of stroke",
     "HeartDiseaseorAttack": "Heart disease or heart attack history",
     "PhysActivity": "Physical activity in the past 30 days",
@@ -219,15 +219,15 @@ with st.form("health_form"):
                 )
             elif feature == "Age":
                 values[feature] = st.selectbox(
-                    "Age group (coded category)", list(range(1, 100))
+                    "Age group (coded category)", list(range(1, 101))
                 )
             elif feature == "Education":
                 values[feature] = st.selectbox(
-                    "Education level (coded category)", list(range(1, 10))
+                    "Education level (coded category)", list(range(1, 11))
                 )
             elif feature == "Income":
                 values[feature] = st.selectbox(
-                    "Income level (coded category)", list(range(1, 10))
+                    "Income level (coded category)", list(range(1, 11))
                 )
 
     st.markdown("")
